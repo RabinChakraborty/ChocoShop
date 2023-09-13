@@ -1,0 +1,149 @@
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4d2600;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(90deg, #ff5733, #ffa700);
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+/* Product Carousel styles */
+.product-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-slides {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Arrow buttons for manual navigation */
+.carousel-button {
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+/* Styles for responsive design */
+@media (max-width: 768px) {
+  .product-carousel {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-carousel {
+    max-width: 90%;
+  }
+}
+
+/* Style the main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chocolates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chocolate-button {
+  background-color: #8b4513;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.chocolate-button.selected {
+  background-color: #ff5733;
+}
+
+/* Your Selection area  */
+.selection {
+  background-color: #8b4513;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+#total-price {
+  font-weight: bold;
+  font-size: 28px;
+  color: #ff5733;
+}
+
+#selected-items {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#selected-items li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #fff;
+}

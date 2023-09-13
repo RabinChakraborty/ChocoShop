@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChocoShop - Custom Chocolate Selection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ChocoShop</h1>
+    </header>
+
+    <main>
+      <section class="product-carousel">
+        <button class="carousel-button prev">&lt;</button>
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <img
+              src="https://cdn.pixabay.com/photo/2010/12/13/10/13/chocolate-2554_640.jpg"
+              alt="Woman Biting a Chocolate Bar"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/11/20/16/59/praline-2966091_640.jpg"
+              alt="Chocolate Swirl"
+            />
+          </div>
+        </div>
+        <button class="carousel-button next">&gt;</button>
+      </section>
+
+      <section class="chocolates"></section>
+
+      <section class="selection">
+        <h2>Your Selection:</h2>
+        <ul id="selected-items"></ul>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
